@@ -16,21 +16,23 @@ Cuando tengas terminada la creatividad, sube la pieza a la plataforma. En este c
 
 Los paneles se deben configurar de la siguiente manera:
 
-PanelName: Contracted
-Position: Page Relative %
-X: 50
-Y: 100
-Width: 320 ( este valor puede cambiar en funcion del plan de medios )
-Height: 50 ( este valor puede cambiar en funcion del plan de medios )
-Auto Retract When: Never
+#PanelName: Contracted
 
-PanelName: Expanded
-Position: Page Relative %
-X: 0
-Y: 0
-Width: 0
-Height: 0
-Auto Retract When: Never
+-   Position: Page Relative %
+-   X: 50
+-   Y: 100
+-   Width: 320 ( este valor puede cambiar en funcion del plan de medios )
+-   Height: 50 ( este valor puede cambiar en funcion del plan de medios )
+-   Auto Retract When: Never
+
+#PanelName: Expanded
+
+-   Position: Page Relative %
+-   X: 0
+-   Y: 0
+-   Width: 0
+-   Height: 0
+-   Auto Retract When: Never
 
 Este formato necesita un custom script en la configuración de la plataforma, pídele al equipo de Sizmek que te lo configure.
 
