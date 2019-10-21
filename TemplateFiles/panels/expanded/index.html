@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>Expandible Full Screen</title>
+	<link rel="stylesheet" href="styles/style.css" />
+	<!-- if 'EBAPI' and 'EBCMD' are both in EBModulesToLoad, ensure EBCMD is last -->
+	<script>EBModulesToLoad = ['Video', 'EBAPI', 'EBCMD'];</script>
+	<script type="text/javascript" src="http://ds.serving-sys.com/BurstingScript/adKit/adkit.js"></script>
+	<script type="text/javascript" src="scripts/script.js"></script>
+	<script>if (0) EB.initPanelDimensions(640, 960);</script><!-- EB -->
+</head>
+
+<body>
+	<div id="expansion" class="expansion">
+		<button id="clickBtn"></button>
+		<button id="closeButton" class="button"></button>
+		<img src="images/logo.png" alt="Logo Sizmek" class="logo">
+		<div class="video-container">
+			<button id="audioButton" class="playerButton audioButton"></button>
+			<button id="controlButton" class="playerButton controlButton"></button>
+			<button id="videoClickBtn" class="videoClickBtn"></button>
+			<video id="video" muted playsinline loop="false" poster="images/poster.jpg" preload="none">
+				<source src="videos/video.mp4" type="video/mp4">
+			</video>
+		</div>
+	</div>
+</body>
+
+</html>

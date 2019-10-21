@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>Sticky Floor Ad 320x50</title>
+	<!-- if 'EBAPI' and 'EBCMD' are both in EBModulesToLoad, ensure EBCMD is last -->
+	<!-- <script>EBModulesToLoad = ['EBAPI', 'EBCMD'];</script> -->
+	<style>
+		/* RESET BLOCK */
+
+		html,
+		body,
+		div,
+		span,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p,
+		a,
+		img,
+		label,
+		tr,
+		th,
+		td,
+		canvas,
+		button,
+		video {
+			margin: 0;
+			padding: 0;
+			border: 0;
+		}
+
+		button {
+			background: transparent;
+			outline: none;
+			border: none;
+			cursor: pointer;
+		}
+
+		/* END RESET BLOCK */
+
+		.banner {
+			position: absolute;
+			width: 320px;
+			height: 50px;
+		}
+
+		.expandBtn {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 99;
+		}
+	</style>
+	<script type="text/javascript" src="http://ds.serving-sys.com/BurstingScript/adKit/adkit.js"></script>
+	<script type="text/javascript">
+
+		function checkIfAdKitReady(event) {
+			adkit.onReady(initializeCreative);
+		}
+
+		function initializeCreative(event) {
+			document.getElementById("expandBtn").addEventListener("click", handleClick);
+		}
+
+		function handleClick(e) {
+			adkit.expand({
+				panelName: "expanded",
+				actionType: adkit.ActionType.USER,
+				expandToMax: !0,
+				useCustomClose: true
+			});
+		}
+
+		window.addEventListener("load", checkIfAdKitReady);
+	</script>
+	<script>if (0) EB.initPanelDimensions(320, 50);</script><!-- EB -->
+</head>
+
+<body>
+	<div class="banner">
+		<button class="expandBtn" id="expandBtn"></button>
+		<img src="images/320X50.gif" alt="Tap to Expand">
+	</div>
+</body>
+
+</html>
