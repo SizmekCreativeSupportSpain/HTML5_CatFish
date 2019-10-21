@@ -16,7 +16,7 @@ Cuando tengas terminada la creatividad, sube la pieza a la plataforma. En este c
 
 Los paneles se deben configurar de la siguiente manera:
 
-#PanelName: Contracted
+# PanelName: Contracted
 
 -   Position: Page Relative %
 -   X: 50
@@ -25,7 +25,7 @@ Los paneles se deben configurar de la siguiente manera:
 -   Height: 50 ( este valor puede cambiar en funcion del plan de medios )
 -   Auto Retract When: Never
 
-#PanelName: Expanded
+# PanelName: Expanded
 
 -   Position: Page Relative %
 -   X: 0
