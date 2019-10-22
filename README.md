@@ -10,6 +10,8 @@ Este formato esta especialmente indicado para obtener buenos datos de visibilida
 
 La plantilla consta de dos partes principales que se encuentran dentro de la carpeta panels. La carpeta contracted contiene todo lo necesario para editar la parte contraida del banner mientras que la carpeta expanded incluye todo lo relativo al panel a fullscreen con video.
 
+<a href="http://www.sizmek.es/eb/users/javiegido_/__Demos/CatFish/demo.mp4"><img src="http://www.sizmek.es/eb/users/javiegido_/__Demos/CatFish/verDemo.png" alt="Sizmek" width="145" height="45" /></a>
+
 ## Configuración
 
 Cuando tengas terminada la creatividad, sube la pieza a la plataforma. En este caso, el formato que debes seleccionar en la plataforma es **HTML5 EXPANDABLE BANNER**.
