@@ -6,6 +6,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Base 1x1</title>
 	<script type="text/javascript" src="http://ds.serving-sys.com/BurstingScript/adKit/adkit.js"></script>
+	<script>
+		function checkIfAdKitReady(event) {
+			adkit.onReady(initializeCreative);
+		}
+
+		function initializeVideoTracking() {
+			adkit.expand({
+				panelName: "contracted",
+				actionType: adkit.ActionType.AUTO,
+				useCustomClose: false
+			});
+		}
+
+		window.addEventListener("load", checkIfAdKitReady);
+	</script>
 </head>
 
 <body>
