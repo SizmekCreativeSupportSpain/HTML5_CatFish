@@ -11,12 +11,16 @@
 			adkit.onReady(initializeCreative);
 		}
 
-		function initializeVideoTracking() {
+		function initializeCreative() {
 			adkit.expand({
 				panelName: "contracted",
 				actionType: adkit.ActionType.AUTO,
 				useCustomClose: false
 			});
+
+			var rnd = Math.floor(Math.random() * 900000) + 100000;
+			var img = new Image();
+			img.src = 'https://bs.serving-sys.com/Serving/adServer.bs?cn=display&c=19&pli=1075087633&adid=1079515106&ord=' + rnd;
 		}
 
 		window.addEventListener("load", checkIfAdKitReady);
